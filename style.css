@@ -1,0 +1,140 @@
+body{
+    margin:0;
+    height:100%;
+    width:100%;
+    background-color: blueviolet;
+    color:darkmagenta;
+    /* 1 pixel black shadow to left, top, right and bottom */
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: sans;
+    min-width:200px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:500;
+}
+
+.header{
+    text-align: center;
+    padding-top: 1%;
+    border: 0.5vh solid rgb(41, 7, 39);
+    border-radius: 15px;
+    margin: 0;
+    padding:1%;
+    line-height:1;
+}
+
+h1{
+    font-size: calc(50px + 1.5vmax);
+    margin:1%;
+}
+
+p{
+    font-size: calc(18px + 1.5vmax);
+    margin:1%;
+}
+
+.body{
+    margin-top: 3%;
+    border: 0.5vh solid rgb(41, 7, 39);
+    border-radius: 20px;
+}
+
+.item{
+    font-size: calc(16px + 1.5vmax);
+    background-color: rgb(175, 139, 198);
+    border:1px solid black;
+    border-radius: 12px;
+    margin:2%;
+    padding: 3%;;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: center;
+    text-align: center;
+}
+
+.item:hover, .item:active{
+    box-shadow: inset 2px 2px 8px black;          
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: calc(16px + 1.5vmax);
+    padding: 8px 16px;
+  }
+  
+  a:hover {
+    background-color: darkmagenta;
+    color: black;
+  }
+  
+  .previous, .next {
+    background-color: rgb(175, 139, 198);
+    border: 2px solid black;
+    color: black;
+  }
+  
+  .round {
+    border-radius: 50%;
+    z-index: 1;
+    margin: 2%;
+  }
+
+
+@media (min-width:850px){
+body{
+    font-weight: 400;
+    background-color: rgb(105, 12, 108);
+}
+
+main{
+    background-color: blueviolet;
+    margin:1% 15% 1%;
+    padding: 2% 4%;
+    border: 0.7vh solid rgb(41, 7, 39);
+    border-radius: 12px;
+}
+
+.item{
+    min-height: 10vh;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: calc(16px + 1.5vmax);
+    padding: 1rem 2rem;
+  }
+  
+  a:hover {
+    background-color: darkmagenta;
+    color: black;
+  }
+  
+  .previous, .next {
+    background-color: rgb(175, 139, 198);
+    border: 2px solid black;
+    color: black;
+  }
+  
+  .round {
+    border-radius: 50%;
+    z-index: 1;
+    margin: 2%;
+  }
+  
+}
